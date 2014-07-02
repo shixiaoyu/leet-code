@@ -1,0 +1,24 @@
+ 1.
+ 一个很大的log，里面是这样子的，可能有几百万行
+reqid1 timestamp1
+reqid2 timestamp3
+reqid1 timestamp2
+然后问你设计一个系统，输入requestid和一个时间段，比如某个月
+然后输出requestid 1日的frequency， 2日的frequency直到31日的frequency 
+我当时是说建立一个map<id,map<date, frequency>>，不断的被他提示用database来做，需要考虑用index
+
+2.
+得到一个这样子的数据
+用户email，用户的location，用户的interest{food, sport...} 
+....
+然后有几百万行
+要你设计一个系统
+输入是一系列的deal，格式是这样子的
+chicago 某个关于food的deal
+seattle 某个关于sport的deal
+很多行
+然后设计一个系统给location和兴趣match的email发邮件
+基于上一个面试的情况，我memory based和database 的两种方法都大概说了说，他貌
+似认可，但是肯定觉得我实际经验还是不足
+
+3.
